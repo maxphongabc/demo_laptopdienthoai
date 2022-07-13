@@ -140,7 +140,7 @@
 								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar shopping">
-								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2 sản phẩm</span></a>
 								<!-- Shopping Item -->
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
@@ -183,8 +183,8 @@
 					<div class="row">
 						<div class="col-lg-3">
 							<div class="all-category">
-								<h3 class="cat-heading" onmouseover="showNavCat"><i id="danhmuc" class="fa fa-bars" aria-hidden="true"></i>Danh Mục</h3>
-								<ul id="nav-danhmuc" class="main-category">
+								<h3 class="cat-heading" onmouseover="showNavCat()"><i id="danhmuc" class="fa fa-bars" aria-hidden="true"></i>Danh Mục</h3>
+								<ul id="nav-danhmuc" class="main-category" style="display: none;">
 									<li><a href="#">Điện thoại <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 										<ul class="sub-category">
 											<li><a href="#">Apple</a></li>
@@ -1675,11 +1675,6 @@
 				<div class="col-lg-6 col-md-6 col-12">
 					<div class="single-banner">
 						<img src="	https://tandoanh.vn/wp-content/uploads/2022/02/Banner-Home-Corsair-Zone-022022.jpg.webp" alt="#">
-						<!-- <div class="content">
-							<p>Man's Collectons</p>
-							<h3>Man's items <br>Up to<span> 50%</span></h3>
-							<a href="#">Shop Now</a>
-						</div> -->
 					</div>
 				</div>
 				<!-- /End Single Banner  -->
@@ -1687,11 +1682,6 @@
 				<div class="col-lg-6 col-md-6 col-12">
 					<div class="single-banner">
 						<img src="	https://tandoanh.vn/wp-content/uploads/2022/02/Banner-Home-Corsair-Zone-022022.jpg.webp" alt="#">
-						<!-- <div class="content">
-							<p>shoes women</p>
-							<h3>mid season <br> up to <span>70%</span></h3>
-							<a href="#" class="btn">Shop Now</a>
-						</div> -->
 					</div>
 				</div>
 				<!-- /End Single Banner  -->
@@ -2299,11 +2289,11 @@
 function showNavCat(){
 	if(counter == 0){
 		$('#nav-danhmuc').show();
-		counter = 1;
+		counter = 0;
 	}
 	else{
 		$('#nav-danhmuc').hide();
-		counter = 0;
+		counter = 1;
 	}	
 }
 	</script>

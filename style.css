@@ -1217,8 +1217,7 @@ Version:1.0
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 510px;
-    /* height: unset; */
+	height: 360px;
 	margin-top: 1px;
 }
 .hero-slider .text-inner {
